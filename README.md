@@ -57,6 +57,41 @@ We will have Three different Section of detailed guide
 
   </h3>
 
+```
+  sudo adduser myuser
+```
+<h1>Add User to Sudo Group</h1>
 
-```bash
-  sudo adduser myuser 
+```
+sudo usermod -aG sudo myuser
+```
+<h1>Switch To New User</h1>
+
+```
+su - myuser
+```
+<h2>Usage</h2>
+1. Clone or download this script into your server:
+
+```
+bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/sunshine-script/main/sunshine_setup.sh)
+```
+
+2. After installation, the script will display a Cloudflare Tunnel URL:
+```
+Tunnel URL: https://xyz123.trycloudflare.com
+```
+3. Open this URL in your browser to access the Sunshine Web UI and pair with Moonlight.
+ 
+4. If it doesn't give you url then Copy and Paste this
+``` 
+cloudflared tunnel --no-tls-verify --url https://localhost:47990
+```
+5. Hopefully You will get Your Url and just Press Ctrl and click on the URL to open automatically on the Browser! 
+ 
+ <h2>Web Ui opening problem</h2>
+ 
+- If you face trouble opening sunshine Web Ui then Go to Your Cloud Vps and Click On Navigation Menu--VPC Network--Firewall (follow this path).
+- Then Click on this colour default allow-http
+ 
+![Screenshoot]()
