@@ -94,4 +94,3 @@ cloudflared tunnel --no-tls-verify --url https://localhost:47990
 - If you face trouble opening sunshine Web Ui then Go to Your Cloud Vps and Click On Navigation Menu--VPC Network--Firewall (follow this path).
 - Then Click on this colour default allow-http
  
-![Screenshoot]()
